@@ -7,3 +7,9 @@ spring:
       server:
         git:
           uri: /home/almir/Pessoal/Projects/Java/spring-cloud/config-files
+
+  rabbitmq:
+    host: localhost
+    port: 32768
+    username: guest
+    password: guest
