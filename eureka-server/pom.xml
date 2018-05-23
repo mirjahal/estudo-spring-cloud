@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.bitbucket.almirjr</groupId>
-	<artifactId>users-service</artifactId>
+	<artifactId>eureka-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>users-service</name>
+	<name>eureka-server</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -40,7 +40,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 
 		<dependency>
@@ -89,5 +89,6 @@
 			</snapshots>
 		</repository>
 	</repositories>
+
 
 </project>
