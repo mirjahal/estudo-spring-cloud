@@ -1,9 +1,15 @@
 package org.bitbucket.almirjr.usersservice;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class User {
 
     private int id;
+
+    @JsonProperty(value = "first_name")
     private String firstName;
+
+    @JsonProperty(value = "last_name")
     private String lastName;
     private String avatar;
 
