@@ -1,7 +1,9 @@
 package org.bitbucket.almirjr.usersservice;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.*;
 
+@JsonTypeName("data")
+@JsonTypeInfo(include = JsonTypeInfo.As.WRAPPER_OBJECT, use = JsonTypeInfo.Id.NAME)
 public class User {
 
     private int id;
