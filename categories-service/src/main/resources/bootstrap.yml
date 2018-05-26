@@ -1,0 +1,9 @@
+server:
+  port: ${server.port}
+
+spring:
+  application:
+    name: categories-service
+  cloud:
+    config:
+      uri: http://localhost:9090
