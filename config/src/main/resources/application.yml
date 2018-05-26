@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-          uri: /home/almir/Dev/Projects/Java/spring-cloud/config-files
+          uri: /home/almir/Pessoal/Projects/Java/spring-cloud/config-files
     bus:
       enabled: true
 
