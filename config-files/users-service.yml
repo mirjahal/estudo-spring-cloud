@@ -12,3 +12,6 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 3000
+
+mocky:
+  user-service-uri: http://localhost:9999/v2/5b05e1d93200009213ebfa7e

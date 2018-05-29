@@ -23,7 +23,7 @@ public class UsersController {
 
     @GetMapping("user")
     public User getUser() {
-        return userClient.findUserById(2);
+        return userClient.findUserById();
     }
 
 }

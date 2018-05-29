@@ -1,0 +1,20 @@
+{
+  "request": {
+    "urlPath": "/v2/5b05e1d93200009213ebfa7e",
+    "method": "GET"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "data": {
+        "id": 2,
+        "first_name": "Janet - 89",
+        "last_name": "Weaver",
+        "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
+      }
+    }
+  }
+}
