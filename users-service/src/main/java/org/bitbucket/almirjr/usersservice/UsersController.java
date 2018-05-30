@@ -1,5 +1,8 @@
 package org.bitbucket.almirjr.usersservice;
 
+import feign.Feign;
+import feign.jackson.JacksonDecoder;
+import feign.jackson.JacksonEncoder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -13,8 +16,8 @@ public class UsersController {
     @Value("${server.port}")
     private String serverPort;
 
-    @Autowired
-    private UserClient userClient;
+    @Value("${mocky.user-service-uri}")
+    private String userServiceUri;
 
     @GetMapping("server-port")
     public String getServerPort() {
@@ -23,7 +26,12 @@ public class UsersController {
 
     @GetMapping("user")
     public User getUser() {
-        return userClient.findUserById();
+        return FeignClientBuilder.build(UserClient.class, userServiceUri).findUserById();
+    }
+
+    @GetMapping("uri")
+    public String getUserServiceUri() {
+        return userServiceUri;
     }
 
 }
